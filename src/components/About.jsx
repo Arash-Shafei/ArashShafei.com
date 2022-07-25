@@ -11,7 +11,7 @@ function About() {
                 </p>
                 <br/>
                 <p className='text-xl'>
-                    Current Project: <span className='font-bold'>Cryptocurrency Portfolio Tracker</span>
+                    Current Project: <span className='font-bold'>MERN Stack Web Application</span>
                 </p>
 
             </div>

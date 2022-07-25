@@ -4,12 +4,15 @@ import javascript from '../assets/javascript.png'
 import reactimage from '../assets/react.png'
 import nextjs from '../assets/nextjs.png'
 import graphql from '../assets/graphql.png'
-import github from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
+import express from '../assets/express.png'
+import java from '../assets/java.png'
+import mongodb from '../assets/mongodb.png'
+import python from '../assets/python.png'
+import sql from '../assets/sql.png'
+import node from '../assets/node.png'
 
-
-
-function Experience() {
+function Skills() {
 
     const listOfTechs = [
         {
@@ -56,25 +59,54 @@ function Experience() {
         },
         {
             id: 8,
-            src: github,
-            title: "GitHub",
+            src: express,
+            title: "ExpressJS",
             style: 'shadow-gray-400'
+        },
+        {
+            id: 9,
+            src:node,
+            title: "NodeJS",
+            style: 'shadow-green-300'
+        },
+        {
+            id: 10,
+            src: java,
+            title: "Java",
+            style: 'shadow-red-400'
+        },
+        {
+            id: 11,
+            src: mongodb,
+            title: "MongoDB",
+            style: 'shadow-green-600'
+        },
+        {
+            id: 12,
+            src: python,
+            title: "Python",
+            style: 'shadow-blue-500'
+        },
+        {
+            id: 13,
+            src: sql,
+            title: "SQL",
+            style: 'shadow-black'
         }
     ]
 
 
     return (
-        <div name='experience' className='bg-gradient-to-b from-blue-200 to-white w-full h-screen'>
+        <div name='skills' className='bg-gradient-to-b from-white to-blue-200  w-full h-full py-28'>
 
-            <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black'>
+            <div className='max-w-screen-lg p-4 flex flex-col justify-center w-full h-full text-black mx-auto'>
 
-                <div>
-                    <p className='text-4xl font-bold border-b-4 border-black p-2 inline'>Experience</p>
-                    <p className='py-6'>Tech i know</p>
+                <div className='mb-10'>
+                    <p className='text-4xl font-bold border-b-4 border-black inline'>Technologies I've worked with</p>
                 </div>
 
 
-                <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
+                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0'>
 
                     {listOfTechs.map( ({id, src, title, style}) => (
                     <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
@@ -93,4 +125,4 @@ function Experience() {
     );
 }
 
-export default Experience;
+export default Skills;

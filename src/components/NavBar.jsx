@@ -17,11 +17,11 @@ function NavBar() {
         },
         {
             id: 3,
-            link: 'portfolio'
+            link: 'skills'
         },
         {
             id: 4,
-            link: 'experience'
+            link: 'projects'
         },
         {
             id: 5,

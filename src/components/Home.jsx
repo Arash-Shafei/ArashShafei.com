@@ -3,7 +3,7 @@ import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import {Link} from 'react-scroll'
 
 function Home() {
-    return(
+    return (
         <div name='home' className='h-screen w-full bg-gradient-to-b from-white to-blue-200'>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full mr-10'>
@@ -11,10 +11,13 @@ function Home() {
                         I'm a Full Stack Developper
                     </h2>
                     <p className='text-black py-4 max-w-md'>
-                        I have 3 years of experience building and designing software. Presently, I am working on web applications using different technologies such as React, Tailwind, NextJS and GraphQL
+                        I have 3 years of experience building and designing software. Presently, I am working on web
+                        applications using different technologies
+                        such as React, NodeJS, ExpressJS and MongoDB
                     </p>
                     <div>
-                        <Link to='portfolio' smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                        <Link to='projects' smooth duration={500}
+                              className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                             Portfolio
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdOutlineKeyboardArrowRight size={25} className='ml-1'/>
@@ -29,4 +32,5 @@ function Home() {
         </div>
     );
 }
+
 export default Home;
