@@ -11,3 +11,25 @@
         font-family: 'Raleway', sans-serif;
     }
 }
+
+/*Reusing Styles*/
+
+@layer components {
+    .nav-links {
+        @apply px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200;
+    }
+
+    .nav-mobile-links {
+        @apply px-4 cursor-pointer capitalize py-6 text-4xl
+    }
+
+    .sidebar-links {
+        @apply flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-blue-100 hover:rounded-md duration-300 hover:ml-[-10px]
+    }
+
+    .sidebar-links a {
+        @apply flex justify-between items-center w-full
+    }
+
+}
+

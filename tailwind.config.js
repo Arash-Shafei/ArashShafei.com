@@ -5,9 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      signature: ['Playfair Display'],
-    }
+    fontFamily: {                          //
+      signature: ['Playfair Display'],     // *New* It's for my name (top left)
+    }                                      //
   },
   plugins: [],
 }
