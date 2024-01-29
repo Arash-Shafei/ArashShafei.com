@@ -26,8 +26,8 @@ function Social() {
         </li>
         <li className="sidebar-links">
           <a
-            href="/ArashShafei_Resume.pdf"
-            download="resume.pdf"
+            href="/ArashShafei_CV.pdf"
+            download="ArashShafei_CV.pdf"
             target="_blank"
             rel="noreferrer"
           >
